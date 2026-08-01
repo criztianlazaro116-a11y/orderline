@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance - N&D Delight's</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #9c6644; /* Light Brown */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #7f4f24;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #a37250;
+            margin-bottom: 25px;
+        }
+
+        /* Pure CSS/SVG Visual Graphics */
+        .illustration-container {
+            width: 100%;
+            max-width: 320px;
+            margin: 15px 0 30px;
+        }
+
+        .svg-illustration {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Reload Button */
+        .reload-btn {
+            background-color: #9c6644;
+            color: #ffffff;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(156, 102, 68, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .reload-btn:hover {
+            background-color: #7f4f24;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(127, 79, 36, 0.3);
+        }
+
+        .reload-btn:active {
+            transform: translateY(0);
+        }
+
+        .reload-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: #ffffff;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.95rem;
+            color: #b08968;
+        }
+
+        footer strong {
+            color: #7f4f24;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h1>N&D Delight's is Under maintenance</h1>
+        <p>We are currently tuning up our system to serve you better. Please check back shortly.</p>
+
+        <!-- Pure Code Illustration (Person fixing a computer system) -->
+        <div class="illustration-container">
+            <svg class="svg-illustration" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Desk -->
+                <rect x="20" y="150" width="260" height="8" rx="4" fill="#b08968"/>
+                <rect x="40" y="158" width="10" height="35" fill="#d6ccc2"/>
+                <rect x="250" y="158" width="10" height="35" fill="#d6ccc2"/>
+                
+                <!-- Computer Monitor -->
+                <rect x="110" y="70" width="80" height="55" rx="5" fill="#7f4f24"/>
+                <rect x="115" y="75" width="70" height="45" rx="3" fill="#ffffff"/>
+                <!-- Code Lines on Monitor -->
+                <line x1="120" y1="83" x2="150" y2="83" stroke="#9c6644" stroke-width="3" stroke-linecap="round"/>
+                <line x1="120" y1="91" x2="170" y2="91" stroke="#ddb892" stroke-width="3" stroke-linecap="round"/>
+                <line x1="120" y1="99" x2="140" y2="99" stroke="#9c6644" stroke-width="3" stroke-linecap="round"/>
+                <line x1="120" y1="107" x2="160" y2="107" stroke="#ddb892" stroke-width="3" stroke-linecap="round"/>
+                <!-- Monitor Stand -->
+                <rect x="143" y="125" width="14" height="25" fill="#b08968"/>
+                <ellipse cx="150" cy="150" rx="20" ry="4" fill="#7f4f24"/>
+
+                <!-- Computer Tower / System -->
+                <rect x="200" y="80" width="40" height="70" rx="4" fill="#ddb892"/>
+                <circle cx="220" cy="95" r="4" fill="#7f4f24"/>
+                <line x1="210" y1="110" x2="230" y2="110" stroke="#9c6644" stroke-width="2"/>
+                <line x1="210" y1="118" x2="230" y2="118" stroke="#9c6644" stroke-width="2"/>
+                
+                <!-- Gears / System elements floating -->
+                <path d="M 85 50 L 87 53 L 90 51 L 91 55 L 95 55 L 94 58 L 97 61 L 93 63 L 93 67 L 90 66 L 87 69 L 87 65 L 83 63 L 85 60 L 82 57 L 86 56 Z" fill="#9c6644"/>
+                <circle cx="89" cy="60" r="3" fill="#ffffff"/>
+
+                <!-- Person (Technician) -->
+                <!-- Head -->
+                <circle cx="70" cy="100" r="12" fill="#e6ccb2"/>
+                <!-- Hair -->
+                <path d="M 62 96 C 62 88, 78 88, 78 96 Z" fill="#7f4f24"/>
+                <!-- Body -->
+                <path d="M 55 150 C 55 120, 85 120, 85 150 Z" fill="#9c6644"/>
+                <!-- Arm/Hand working on PC -->
+                <path d="M 75 125 Q 95 120 110 110" stroke="#e6ccb2" stroke-width="6" stroke-linecap="round" fill="none"/>
+                <!-- Tool/Screwdriver in hand -->
+                <line x1="108" y1="111" x2="120" y2="105" stroke="#7f4f24" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <!-- Reload Button -->
+        <button class="reload-btn" onclick="window.location.reload();">
+            <svg viewBox="0 0 24 24">
+                <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+            </svg>
+            Reload Page
+        </button>
+    </main>
+
+    <footer>
+        Developed by <strong>Criztian Dave A. Lazaro</strong>
+    </footer>
+
+</body>
+</html>
