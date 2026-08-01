@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance - N&D Delight's</title>
+    <style>
+        /* Modern CSS reset and layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff; /* White background */
+            color: #b08968; /* Light brown text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Decorative Gear Icon */
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: spin 8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            height: 2px;
+            width: 60px;
+            background-color: #e6ccb2; /* Subtle light brown accent */
+            margin: 0 auto 30px;
+            border-radius: 2px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        footer span {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <div class="icon">⚙️</div>
+        <h1>N&D Delight's</h1>
+        <div class="divider"></div>
+        <p>We are currently undergoing scheduled maintenance to improve our services. We'll be back online shortly. Thank you for your patience!</p>
+    </main>
+
+    <footer>
+        Developed by <span>Criztian Dave A. Lazaro</span>
+    </footer>
+
+</body>
+</html>
